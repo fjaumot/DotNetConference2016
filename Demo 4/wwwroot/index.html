@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mis productos</title>
+    <!-- 1. Load libraries -->
+    <link href="libs/css/bootstrap.css" rel="stylesheet" />
+    <script src="libs/es6-shim.min.js"></script>
+    <script src="libs/system-polyfills.js"></script>
+    <script src="libs/angular2-polyfills.js"></script>
+    <script src="libs/system.js"></script>
+    <script src="libs/rx.js"></script>
+    <script src="libs/angular2.dev.js"></script>
+    <script src="libs/http.dev.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script>
+        System.config({
+            packages: {
+                appScripts: { defaultExtension: 'js'}
+                //rxjs: { defaultExtension: 'js'}
+            }
+            // map: {
+            //     rxjs: 'node_modules/rxjs' //or wherever you have it installed
+            // }
+        });        
+    </script>
+    <script>        
+        System.import('appScripts/boot')
+              .then(null, console.error.bind(console));
+    </script>
+
+    <link  rel="stylesheet"  type="text/css"  media="all"  href="css/styles.css">
+</head>
+<body>    
+    <cou>Loading...</cou>    
+</body>
+</html>

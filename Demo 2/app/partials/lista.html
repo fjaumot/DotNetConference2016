@@ -1,0 +1,23 @@
+<div  id="w">
+      <header  id="title">
+        <h1>Lista de la compra</h1>
+      </header>
+      <div  id="page">
+            
+            <input type="text" placeholder="  + Añadir un elemento..." style="width:90%;font-size:20px; font-weight: bold; height:50px;" 
+                newProduct (keyup)="doneTyping($event)"> 
+        
+        <table  id="cart">
+          	    
+          <tbody>
+            <!-- shopping cart contents -->
+			
+			
+            <tr *ngFor="#product of products;">
+              <td><input type="checkbox"></td>  
+              <td class="element" style="font-size:25px; font-weight: bold; margin-left:30px; text-align:left; width:100%;">{{product.name}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
